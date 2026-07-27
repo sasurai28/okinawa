@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#1a7fa8">
+<meta name="theme-color" content="#0891b2">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="旅のしおり">
@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
-tailwind.config={darkMode:"class",theme:{extend:{colors:{"pri":"#1a7fa8","pri-c":"#8ed5f5","on-pri":"#f4f9ff","on-pri-c":"#004d6b","sec":"#4a7a00","sec-c":"#b8e86a","on-sec-c":"#3f5a00","ter":"#c43a39","ter-c":"#ffa8a0","on-ter-c":"#740009","err":"#c43a39","err-c":"#ff7b73","sf":"#fdfaf4","sf-low":"#f8f2e5","sf-mid":"#f2ebd9","sf-hi":"#ece5cf","sf-top":"#e4dcc4","on-sf":"#2c2818","on-sf-v":"#6b6555","ol":"#8a8270","ol-v":"#c0b8a6"},fontFamily:{h:["Zen Maru Gothic","sans-serif"],ui:["Zen Maru Gothic","sans-serif"],b:["Zen Maru Gothic","sans-serif"]},borderRadius:{DEFAULT:"1rem",lg:"1.5rem",xl:"2rem","2xl":"3rem",full:"9999px"},keyframes:{fadeUp:{from:{opacity:0,transform:"translateY(16px)"},to:{opacity:1,transform:"translateY(0)"}},scaleIn:{from:{opacity:0,transform:"scale(.92)"},to:{opacity:1,transform:"scale(1)"}},shimmer:{from:{backgroundPosition:"-200% 0"},to:{backgroundPosition:"200% 0"}},float:{"0%,100%":{transform:"translateY(0)"},"50%":{transform:"translateY(-6px)"}}},animation:{"fade-up":"fadeUp .5s cubic-bezier(.22,1,.36,1) both","scale-in":"scaleIn .35s cubic-bezier(.22,1,.36,1) both","shimmer":"shimmer 3s ease infinite","float":"float 4s ease-in-out infinite"}}}};
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"pri":"#0891b2","pri-c":"#a5f3fc","on-pri":"#f4f9ff","on-pri-c":"#155e75","sec":"#4a7a00","sec-c":"#b8e86a","on-sec-c":"#3f5a00","ter":"#c43a39","ter-c":"#ffa8a0","on-ter-c":"#740009","err":"#c43a39","err-c":"#ff7b73","sf":"#fdfaf4","sf-low":"#f8f2e5","sf-mid":"#f2ebd9","sf-hi":"#ece5cf","sf-top":"#e4dcc4","on-sf":"#2c2818","on-sf-v":"#6b6555","ol":"#8a8270","ol-v":"#c0b8a6"},fontFamily:{h:["Zen Maru Gothic","sans-serif"],ui:["Zen Maru Gothic","sans-serif"],b:["Zen Maru Gothic","sans-serif"]},borderRadius:{DEFAULT:"1rem",lg:"1.5rem",xl:"2rem","2xl":"3rem",full:"9999px"},keyframes:{fadeUp:{from:{opacity:0,transform:"translateY(16px)"},to:{opacity:1,transform:"translateY(0)"}},scaleIn:{from:{opacity:0,transform:"scale(.92)"},to:{opacity:1,transform:"scale(1)"}},shimmer:{from:{backgroundPosition:"-200% 0"},to:{backgroundPosition:"200% 0"}},float:{"0%,100%":{transform:"translateY(0)"},"50%":{transform:"translateY(-6px)"}}},animation:{"fade-up":"fadeUp .5s cubic-bezier(.22,1,.36,1) both","scale-in":"scaleIn .35s cubic-bezier(.22,1,.36,1) both","shimmer":"shimmer 3s ease infinite","float":"float 4s ease-in-out infinite"}}}};
 </script>
 <style>
 .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
@@ -35,7 +35,7 @@ body{font-family:'Zen Maru Gothic',sans-serif;background:#fdfaf4;color:#2c2818;-
 /* Grain overlay */
 .grain::after{content:'';position:fixed;inset:0;opacity:.025;pointer-events:none;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
 /* Editorial underline accent */
-.accent-line{position:relative;display:inline-block;}.accent-line::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:6px;background:var(--accent,#8ed5f5);opacity:.3;border-radius:3px;z-index:-1;}
+.accent-line{position:relative;display:inline-block;}.accent-line::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:6px;background:var(--accent,#a5f3fc);opacity:.3;border-radius:3px;z-index:-1;}
 /* Slide-up entrance for bottom sheets */
 @keyframes slideUp{from{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}
 .animate-slide-up{animation:slideUp .4s cubic-bezier(.22,1,.36,1) both;}
@@ -52,10 +52,12 @@ body{font-family:'Zen Maru Gothic',sans-serif;background:#fdfaf4;color:#2c2818;-
 /* Smooth scrollbar for day nav */
 .day-nav{scroll-snap-type:x mandatory;}.day-nav>*{scroll-snap-align:center;}
 /* Badge glow */
-.badge-glow{box-shadow:0 0 12px rgba(26,127,168,.2);}
+.badge-glow{box-shadow:0 0 12px rgba(8,145,178,.2);}
 /* Timeline dot pulse */
-@keyframes dot-pulse{0%{box-shadow:0 0 0 0 rgba(26,127,168,.3)}70%{box-shadow:0 0 0 8px rgba(26,127,168,0)}100%{box-shadow:0 0 0 0 rgba(26,127,168,0)}}
+@keyframes dot-pulse{0%{box-shadow:0 0 0 0 rgba(8,145,178,.3)}70%{box-shadow:0 0 0 8px rgba(8,145,178,0)}100%{box-shadow:0 0 0 0 rgba(8,145,178,0)}}
 .dot-pulse{animation:dot-pulse 2s ease infinite;}
+
+body::before{content:'';position:fixed;z-index:-1;inset:-10%;pointer-events:none;background:radial-gradient(42% 30% at 12% 8%,rgba(34,211,238,.12),transparent 62%),radial-gradient(38% 28% at 88% 18%,rgba(16,185,129,.09),transparent 62%),radial-gradient(50% 36% at 50% 100%,rgba(8,145,178,.08),transparent 62%);filter:blur(18px);}
 </style>
 </head>
 <body>
@@ -107,7 +109,7 @@ const TABS = [
 const DAYS=[
 {day:1,date:"8/4(火)",title:"関空へ前泊！",emoji:"🚅",region:"大阪→関空",stay:"ホテル日航関西空港",stayArea:"関空T1直結",events:[
 {time:"16:40",text:"新今宮駅へ",icon:"train",maps:"https://maps.google.com/?q=新今宮駅",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🎒",flabel:"出発"},
-{time:"17:02",text:"ラピートβ55号（5号車 05·06·09·10）",icon:"train",grad:"linear-gradient(135deg,#1e3a8a,#3b82f6)",femoji:"🚅",flabel:"購入済"},
+{time:"17:02",text:"ラピートβ55号（5号車 05·06·09·10）",icon:"train",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nankai_50000_series_Rapit_at_Namba_Station_2017-03-12.jpg/1280px-Nankai_50000_series_Rapit_at_Namba_Station_2017-03-12.jpg",grad:"linear-gradient(135deg,#1e3a8a,#3b82f6)",femoji:"🚅",flabel:"購入済"},
 {time:"17:37",text:"関空着 → ホテルへ（駅直結・雨に濡れない）",icon:"hotel",maps:"https://maps.google.com/?q=ホテル日航関西空港",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏨",flabel:"日航関空"},
 {time:"18:00",text:"ザ・ブラッスリー（荷物は先にフロントへ！）",icon:"restaurant",grad:"linear-gradient(135deg,#92400e,#d97706)",femoji:"🍽️",flabel:"予約済"},
 {time:"20:00",text:"就寝。あすの朝支度をすませる",icon:"bedtime",grad:"linear-gradient(135deg,#312e81,#6366f1)",femoji:"🌙",flabel:"おやすみ"},
@@ -116,23 +118,23 @@ const DAYS=[
 {time:"6:00",text:"起床（ターミナル直結だからゆっくり）",icon:"alarm",grad:"linear-gradient(135deg,#f59e0b,#fbbf24)",femoji:"⏰",flabel:"おはよう"},
 {time:"6:30",text:"JTAカウンターで手荷物を預ける",icon:"luggage",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🧳",flabel:"関空T1"},
 {time:"7:40",text:"JTA121 離陸！",icon:"flight_takeoff",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"✈️",flabel:"DNENJX"},
-{time:"9:55",text:"宮古空港とうちゃく",icon:"flight_land",maps:"https://maps.google.com/?q=宮古空港",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🌺",flabel:"宮古島"},
+{time:"9:55",text:"宮古空港とうちゃく",icon:"flight_land",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Miyako%27s_best_beach_%2851924567535%29.jpg/1280px-Miyako%27s_best_beach_%2851924567535%29.jpg",maps:"https://maps.google.com/?q=宮古空港",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🌺",flabel:"宮古島"},
 {time:"10:30",text:"デイゴレンタカーでシエンタ受取",icon:"directions_car",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🚗",flabel:"MZ…731"},
 {time:"12:00",text:"昼食＋サンエーで4泊分の買い出し",icon:"shopping_cart",maps:"https://maps.google.com/?q=サンエー宮古島シティ",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🛒",flabel:"買い出し"},
 {time:"15:00",text:"チェックイン（東仲宗根903-18 ゲストサービスセンター）",icon:"hotel",maps:"https://maps.google.com/?q=ホテルカリフォルニア宮古島リゾート",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏝️",flabel:"4泊"},
 {time:"18:00",text:"部屋でゆっくり夕ごはん",icon:"cottage",grad:"linear-gradient(135deg,#312e81,#6366f1)",femoji:"🍚",flabel:"部屋食"},
 ]},
 {day:3,date:"8/6(木)",title:"与那覇前浜ビーチ",emoji:"🏖️",region:"宮古島",stay:"ホテルカリフォルニア",stayArea:"平良・東仲宗根",events:[
-{time:"9:30",text:"与那覇前浜ビーチ（東洋一の白砂！）",icon:"beach_access",maps:"https://maps.google.com/?q=与那覇前浜ビーチ",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏖️",flabel:"前浜"},
+{time:"9:30",text:"与那覇前浜ビーチ（東洋一の白砂！）",icon:"beach_access",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Yonaha_Beach_%2851924567580%29.jpg/1280px-Yonaha_Beach_%2851924567580%29.jpg",maps:"https://maps.google.com/?q=与那覇前浜ビーチ",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏖️",flabel:"前浜"},
 {time:"12:00",text:"昼ごはん",icon:"restaurant",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍴",flabel:"ランチ"},
 {time:"13:00",text:"ホテルで昼寝タイム",icon:"bedtime",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"😴",flabel:"おひるね"},
-{time:"16:00",text:"砂山ビーチ or 東平安名崎ドライブ",icon:"landscape",maps:"https://maps.google.com/?q=砂山ビーチ",grad:"linear-gradient(135deg,#f472b6,#fda4af)",femoji:"🌅",flabel:"夕方さんぽ"},
+{time:"16:00",text:"砂山ビーチ or 東平安名崎ドライブ",icon:"landscape",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sunayama_Beach_in_Miyako_Island_%2C_Okinawa_Pref._-_panoramio.jpg/1280px-Sunayama_Beach_in_Miyako_Island_%2C_Okinawa_Pref._-_panoramio.jpg",maps:"https://maps.google.com/?q=砂山ビーチ",grad:"linear-gradient(135deg,#f472b6,#fda4af)",femoji:"🌅",flabel:"夕方さんぽ"},
 {time:"18:00",text:"ユキシオステーキ（宮古牛！）",icon:"restaurant",maps:"https://maps.google.com/?q=ユキシオステーキ宮古島",grad:"linear-gradient(135deg,#7f1d1d,#dc2626)",femoji:"🥩",flabel:"予約済"},
 ]},
 {day:4,date:"8/7(金)",title:"ウミガメに会う日",emoji:"🐢",region:"宮古島",stay:"ホテルカリフォルニア",stayArea:"平良・東仲宗根",events:[
 {time:"8:00",text:"朝ごはん。水着＋ラッシュガードを着ておく",icon:"checkroom",grad:"linear-gradient(135deg,#f59e0b,#fbbf24)",femoji:"👙",flabel:"じゅんび"},
 {time:"9:30",text:"OCEAN LIFEお迎え（10分遅れNG！）",icon:"airport_shuttle",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🚐",flabel:"ホテル前"},
-{time:"10:00",text:"貸切ウミガメシュノーケル！",icon:"scuba_diving",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🐢",flabel:"予約済"},
+{time:"10:00",text:"貸切ウミガメシュノーケル！",icon:"scuba_diving",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Green_Turtle_Chelonia_Mydas_%28223128015%29.jpeg/1280px-Green_Turtle_Chelonia_Mydas_%28223128015%29.jpeg",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🐢",flabel:"予約済"},
 {time:"12:00",text:"帰着 → シャワー → 軽い昼食",icon:"shower",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🚿",flabel:"さっぱり"},
 {time:"13:30",text:"全員で昼寝（〜15:30 これ大事）",icon:"bedtime",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"😴",flabel:"おひるね"},
 {time:"17:00",text:"夕ごはんは部屋食（4人そろって早めに）",icon:"cottage",grad:"linear-gradient(135deg,#312e81,#6366f1)",femoji:"🍚",flabel:"部屋食"},
@@ -140,8 +142,8 @@ const DAYS=[
 {time:"19:30",text:"パパだけピックルボール（北中体育館 〜21:30）",icon:"sports_tennis",maps:"https://maps.google.com/?q=宮古島市立北中学校",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🏓",flabel:"参加費200円"},
 ]},
 {day:5,date:"8/8(土)",title:"伊良部大橋を渡る",emoji:"🌉",region:"伊良部島",stay:"ホテルカリフォルニア",stayArea:"平良・東仲宗根",events:[
-{time:"9:30",text:"伊良部大橋ドライブ（無料橋で日本一長い！）",icon:"directions_car",maps:"https://maps.google.com/?q=伊良部大橋",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🌉",flabel:"絶景"},
-{time:"10:00",text:"佐和田の浜 or 中の島ビーチ",icon:"beach_access",maps:"https://maps.google.com/?q=佐和田の浜",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🐚",flabel:"浜あそび"},
+{time:"9:30",text:"伊良部大橋ドライブ（無料橋で日本一長い！）",icon:"directions_car",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Irabu_oohashi1.jpg/1280px-Irabu_oohashi1.jpg",maps:"https://maps.google.com/?q=伊良部大橋",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🌉",flabel:"絶景"},
+{time:"10:00",text:"佐和田の浜 or 中の島ビーチ",icon:"beach_access",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coral_off_the_coast_-_panoramio.jpg/1280px-Coral_off_the_coast_-_panoramio.jpg",maps:"https://maps.google.com/?q=佐和田の浜",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🐚",flabel:"浜あそび"},
 {time:"12:00",text:"伊良部島で昼ごはん",icon:"restaurant",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍴",flabel:"ランチ"},
 {time:"13:00",text:"帰りの車で昼寝（作戦どおり）",icon:"airline_seat_recline_extra",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"😴",flabel:"車内"},
 {time:"17:00",text:"マルヨシ鮮魚店で刺し盛りを買う（現金！）",icon:"set_meal",maps:"https://maps.google.com/?q=マルヨシ鮮魚店宮古島",grad:"linear-gradient(135deg,#7f1d1d,#dc2626)",femoji:"🐟",flabel:"ホテル至近"},
@@ -151,7 +153,7 @@ const DAYS=[
 {day:6,date:"8/9(日)",title:"シギラへお引っ越し",emoji:"🌊",region:"シギラリゾート",stay:"シギラミラージュ ビーチフロント",stayArea:"上野新里",events:[
 {time:"10:00",text:"洗濯を回してチェックアウト準備",icon:"local_laundry_service",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🧺",flabel:"おかたづけ"},
 {time:"11:00",text:"買い足し → 上野方面へのんびり移動",icon:"directions_car",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🚗",flabel:"移動"},
-{time:"15:00",text:"シギラミラージュ ビーチフロント チェックイン",icon:"hotel",maps:"https://maps.google.com/?q=ホテルシギラミラージュ",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🌊",flabel:"3泊"},
+{time:"15:00",text:"シギラミラージュ ビーチフロント チェックイン",icon:"hotel",img:"https://shigira.com/assets/imgs/common/ogp.jpg",maps:"https://maps.google.com/?q=ホテルシギラミラージュ",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🌊",flabel:"3泊"},
 {time:"15:30",text:"シギラビーチで軽くあそぶ（徒歩1分）",icon:"beach_access",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🏖️",flabel:"ビーチ"},
 {time:"17:00",text:"蕎麦前 宮古（20分遅れると取消！）",icon:"ramen_dining",maps:"https://maps.google.com/?q=蕎麦前宮古シギラ",grad:"linear-gradient(135deg,#374151,#6b7280)",femoji:"🍜",flabel:"予約済"},
 {time:"18:45",text:"ファンキーフラミンゴ入店（15分前必須）",icon:"music_note",maps:"https://maps.google.com/?q=ファンキーフラミンゴ宮古島",grad:"linear-gradient(135deg,#be185d,#f472b6)",femoji:"🦩",flabel:"入場2,000円"},
@@ -164,7 +166,7 @@ const DAYS=[
 {time:"19:30",text:"エイサー・三線・島唄ライブ（無料！〜20:15）",icon:"festival",grad:"linear-gradient(135deg,#7f1d1d,#dc2626)",femoji:"🥁",flabel:"エイサー"},
 ]},
 {day:8,date:"8/11(火)",title:"宮古最終夜は絶景と温泉",emoji:"♨️",region:"シギラリゾート",stay:"シギラミラージュ ビーチフロント",stayArea:"上野新里",events:[
-{time:"9:30",text:"ビーチ・プール（宮古の海を目に焼き付ける）",icon:"pool",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏊",flabel:"最終日"},
+{time:"9:30",text:"ビーチ・プール（宮古の海を目に焼き付ける）",icon:"pool",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cape_Higashi-Hennazaki_%2851923939821%29.jpg/1280px-Cape_Higashi-Hennazaki_%2851923939821%29.jpg",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏊",flabel:"最終日"},
 {time:"15:00",text:"荷造り（水着だけ残す！〜16:30）",icon:"luggage",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🧳",flabel:"パッキング"},
 {time:"17:00",text:"スターダストガーデン（丘の上の絶景ピッツァ）",icon:"local_pizza",maps:"https://maps.google.com/?q=スターダストガーデン宮古島",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍕",flabel:"ENKNWL"},
 {time:"19:15",text:"シギラ黄金温泉（eチケット・愛生800円現地）",icon:"hot_tub",maps:"https://maps.google.com/?q=シギラ黄金温泉",grad:"linear-gradient(135deg,#92400e,#d97706)",femoji:"♨️",flabel:"F3KTMF51"},
@@ -183,14 +185,14 @@ const DAYS=[
 {time:"9:30",text:"道の駅ぎのざ（無料の大型遊具＋水あそび）",icon:"attractions",maps:"https://maps.google.com/?q=道の駅ぎのざ",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🎠",flabel:"車20分"},
 {time:"12:00",text:"カヌチャに戻って昼ごはん",icon:"restaurant",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍴",flabel:"ランチ"},
 {time:"12:50",text:"きっずるーむ集合（サウスウィング棟2F 2225室）",icon:"child_care",grad:"linear-gradient(135deg,#f472b6,#fda4af)",femoji:"🧸",flabel:"おもちゃ持込NG"},
-{time:"14:00",text:"パパママはパラセール！",icon:"paragliding",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🪂",flabel:"予約済"},
+{time:"14:00",text:"パパママはパラセール！",icon:"paragliding",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Parasailing_in_Sochi.JPG/1280px-Parasailing_in_Sochi.JPG",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🪂",flabel:"予約済"},
 {time:"16:00",text:"きっずるーむお迎え",icon:"child_care",grad:"linear-gradient(135deg,#f472b6,#fda4af)",femoji:"🤗",flabel:"おかえり"},
 {time:"18:00",text:"クーワクーワで夕ごはん",icon:"restaurant",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍽️",flabel:"予約済"},
 ]},
 {day:11,date:"8/14(金)",title:"美ら海水族館！",emoji:"🐋",region:"本部→カヌチャ",stay:"カヌチャベイホテル＆ヴィラズ",stayArea:"名護市安部",events:[
 {time:"7:00",text:"朝ごはん（この日だけ早めに）",icon:"restaurant",grad:"linear-gradient(135deg,#f59e0b,#fbbf24)",femoji:"🍳",flabel:"早起き"},
 {time:"8:00",text:"カヌチャ出発（車40分）",icon:"directions_car",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🚙",flabel:"西海岸へ"},
-{time:"8:40",text:"美ら海水族館（黒潮の海の大水槽から！）",icon:"water",maps:"https://maps.google.com/?q=沖縄美ら海水族館",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🦈",flabel:"6歳未満無料"},
+{time:"8:40",text:"美ら海水族館（黒潮の海の大水槽から！）",icon:"water",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Whale_Shark_-_Churaumi_aquarium%2C_Okinawa%2C_Japan.jpg/1280px-Whale_Shark_-_Churaumi_aquarium%2C_Okinawa%2C_Japan.jpg",maps:"https://maps.google.com/?q=沖縄美ら海水族館",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🦈",flabel:"6歳未満無料"},
 {time:"12:15",text:"カヌチャ帰着・昼ごはん",icon:"restaurant",grad:"linear-gradient(135deg,#b45309,#f59e0b)",femoji:"🍴",flabel:"ランチ"},
 {time:"12:50",text:"きっずるーむ（空き待ち中→ダメなら交代制）",icon:"child_care",grad:"linear-gradient(135deg,#f472b6,#fda4af)",femoji:"🧸",flabel:"PU5WV5ZO"},
 {time:"14:20",text:"フライボード（パパ→ママの順で交代）",icon:"surfing",grad:"linear-gradient(135deg,#0d9488,#5eead4)",femoji:"🌊",flabel:"14:20/15:00"},
@@ -205,7 +207,7 @@ const DAYS=[
 {day:13,date:"8/16(日)",title:"那覇へ南下＆島唄の夜",emoji:"🎶",region:"那覇",stay:"ホテルコレクティブ",stayArea:"那覇・久茂地",events:[
 {time:"11:00",text:"カヌチャ チェックアウト",icon:"hotel",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"👋",flabel:"またね"},
 {time:"11:30",text:"ブセナ海中公園（海中展望塔）",icon:"visibility",maps:"https://maps.google.com/?q=ブセナ海中公園",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🐠",flabel:"寄り道①"},
-{time:"13:00",text:"美浜アメリカンビレッジで昼＆買い物",icon:"storefront",maps:"https://maps.google.com/?q=美浜アメリカンビレッジ",grad:"linear-gradient(135deg,#be185d,#f472b6)",femoji:"🎡",flabel:"寄り道②"},
+{time:"13:00",text:"美浜アメリカンビレッジで昼＆買い物",icon:"storefront",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mihama_Town_Resort_American_Village_20160720.jpg/1280px-Mihama_Town_Resort_American_Village_20160720.jpg",maps:"https://maps.google.com/?q=美浜アメリカンビレッジ",grad:"linear-gradient(135deg,#be185d,#f472b6)",femoji:"🎡",flabel:"寄り道②"},
 {time:"15:00",text:"コルディオ返却（那覇空港）",icon:"directions_car",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🔑",flabel:"返却"},
 {time:"16:00",text:"タクシーでホテルコレクティブへ",icon:"local_taxi",maps:"https://maps.google.com/?q=ホテルコレクティブ那覇",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"🏙️",flabel:"1泊"},
 {time:"18:00",text:"島唄DINING 道ジュネー（90分制）",icon:"music_note",maps:"https://maps.google.com/?q=島唄DINING道ジュネー",grad:"linear-gradient(135deg,#7f1d1d,#dc2626)",femoji:"🎶",flabel:"徒歩2分"},
@@ -215,7 +217,7 @@ const DAYS=[
 {time:"5:30",text:"起床（がんばれ！）",icon:"alarm",grad:"linear-gradient(135deg,#f59e0b,#fbbf24)",femoji:"⏰",flabel:"早起き"},
 {time:"6:00",text:"タクシーで那覇空港へ（車15分）",icon:"local_taxi",grad:"linear-gradient(135deg,#5b5c59,#8b8b8b)",femoji:"🚕",flabel:"前夜予約済"},
 {time:"7:10",text:"JTA2 那覇→関空",icon:"flight_takeoff",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",femoji:"✈️",flabel:"DMW5FJ"},
-{time:"9:10",text:"関空着。14日間おつかれさま！",icon:"flight_land",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🏠",flabel:"おかえり"},
+{time:"9:10",text:"関空着。14日間おつかれさま！",icon:"flight_land",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kansai_International_Airport_Terminal_1_Interior1_2014.jpg/1280px-Kansai_International_Airport_Terminal_1_Interior1_2014.jpg",grad:"linear-gradient(135deg,#15803d,#4ade80)",femoji:"🏠",flabel:"おかえり"},
 ]},
 ];
 
@@ -265,9 +267,9 @@ const DEFAULT_PACKING=[
 const BOOKINGS=[
 {date:"8/4",name:"ホテル日航関西空港",ref:"IK1652269623",amount:"¥14,400",area:"関空T1直結",ci:"15:00",co:"11:00",meal:"素泊まり",nights:"1泊",grad:"linear-gradient(135deg,#1e3a8a,#3b82f6)",emoji:"🛫",tag:"駅から雨に濡れない",desc:"18:00ブラッスリー予約。着いたら荷物を先にフロントへ"},
 {date:"8/5-8/9",name:"ホテルカリフォルニア宮古島",ref:"IY1568692461",amount:"¥71,622",area:"平良・東仲宗根",ci:"15:00",co:"11:00",meal:"素泊まり",nights:"4泊",grad:"linear-gradient(135deg,#0d9488,#5eead4)",emoji:"🌴",tag:"キッチン・洗濯機つき40㎡",desc:"チェックインは東仲宗根903-18のゲストサービスセンターで"},
-{date:"8/9-8/12",name:"シギラミラージュ ビーチフロント",ref:"IK1575389002",amount:"¥378,480",area:"上野新里",ci:"15:00",co:"11:00",meal:"朝食付",nights:"3泊",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",emoji:"🌊",tag:"シギラビーチ徒歩1分",desc:"朝食は3会場から選べる。タートルベイならウミガメの餌やり付き"},
+{date:"8/9-8/12",name:"シギラミラージュ ビーチフロント",ref:"IK1575389002",amount:"¥378,480",area:"上野新里",ci:"15:00",co:"11:00",meal:"朝食付",nights:"3泊",grad:"linear-gradient(135deg,#0e7490,#38bdf8)",emoji:"🌊",tag:"シギラビーチ徒歩1分",img:"https://shigira.com/assets/imgs/common/ogp.jpg",desc:"朝食は3会場から選べる。タートルベイならウミガメの餌やり付き"},
 {date:"8/12-8/16",name:"カヌチャベイホテル＆ヴィラズ",ref:"IK1613937783",amount:"¥371,400",area:"名護市安部",ci:"15:00",co:"11:00",meal:"朝食＋ディナー1回＋カート",nights:"4泊",grad:"linear-gradient(135deg,#15803d,#4ade80)",emoji:"⛳",tag:"80万坪のリゾート",desc:"きっずるーむはサウスウィング棟2F 2225室。集合は10分前"},
-{date:"8/16",name:"ホテルコレクティブ",ref:"IK1595905848",amount:"¥26,100",area:"那覇・久茂地",ci:"15:00",co:"11:00",meal:"素泊まり",nights:"1泊",grad:"linear-gradient(135deg,#7c3aed,#a78bfa)",emoji:"🏙️",tag:"道ジュネー徒歩2分",desc:"ベッド連結＋両側ガード確約済み。翌朝のタクシーは前夜に手配"},
+{date:"8/16",name:"ホテルコレクティブ",ref:"IK1595905848",amount:"¥26,100",area:"那覇・久茂地",ci:"15:00",co:"11:00",meal:"素泊まり",nights:"1泊",grad:"linear-gradient(135deg,#7c3aed,#a78bfa)",emoji:"🏙️",tag:"道ジュネー徒歩2分",img:"https://hotelcollective.jp/common/images/share/collective_ogp.jpg",desc:"ベッド連結＋両側ガード確約済み。翌朝のタクシーは前夜に手配"},
 {date:"8/5-8/12",name:"デイゴレンタカー（シエンタ）",ref:"MZ00000000731",amount:"¥58,250",area:"宮古空港",ci:"10:30",co:"11:30",meal:"チャイルドシート2台無料",nights:"7日間",grad:"linear-gradient(135deg,#b45309,#f59e0b)",emoji:"🚗",tag:"空港送迎あり",desc:"現地キャッシュレス決済。返却は8/12 11:30"},
 {date:"8/12-8/16",name:"コルディオ（アルファード）",ref:"247192913",amount:"¥53,950",area:"那覇空港",ci:"15:30",co:"15:00",meal:"シート2台＋NOC補償込",nights:"4日間",grad:"linear-gradient(135deg,#374151,#6b7280)",emoji:"🚙",tag:"PW: 693d0f06",desc:"豊見城市翁長849-10。現地決済。返却は8/16 15:00"},
 ];
@@ -326,7 +328,7 @@ const TravelBadge=({t})=>{
   return(<div className="relative ml-[-42px] my-1 flex items-center gap-2 pl-[42px]">
     <div className="absolute left-[16px] w-[10px] h-[10px] rounded-full border-2 border-pri/20 bg-sf z-10"/>
     <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-sf-v/60" style={{background:"rgba(138,130,112,.04)",border:"1px dashed rgba(138,130,112,.1)"}}>
-      <MI name={icon} size={12} style={{color:"#1a7fa8",opacity:.7}}/>
+      <MI name={icon} size={12} style={{color:"#0891b2",opacity:.7}}/>
       <span>{t.km>0?`${t.km}km`:""}  {t.min>=60?`${Math.floor(t.min/60)}h${t.min%60>0?(t.min%60+"min"):""}`:t.min+"min"}</span>
       <span className="opacity-40">|</span>
       <span className="opacity-60">{label}</span>
@@ -528,25 +530,25 @@ function App(){
     <div className="absolute top-[-60px] right-[-60px] opacity-[.03] text-[240px] font-h select-none animate-float">🏝️</div>
     <div className="absolute bottom-[-80px] left-[-40px] opacity-[.03] text-[180px] select-none" style={{transform:"rotate(-15deg)"}}>⛩️</div>
     <div className="animate-fade-up" style={{animationDelay:"0ms"}}>
-      <span className="num text-[10px] font-semibold tracking-[4px] uppercase text-pri/80 px-5 py-2 rounded-full border border-pri/15 inline-block" style={{background:"linear-gradient(135deg,rgba(26,127,168,.06),rgba(142,213,245,.1))"}}>Family Expedition 2026</span>
+      <span className="num text-[10px] font-semibold tracking-[4px] uppercase text-pri/80 px-5 py-2 rounded-full border border-pri/15 inline-block" style={{background:"linear-gradient(135deg,rgba(8,145,178,.06),rgba(142,213,245,.1))"}}>Family Expedition 2026</span>
     </div>
     <div className="animate-fade-up" style={{animationDelay:"80ms"}}>
-      <h2 className="font-h text-[52px] font-bold text-on-sf leading-[1.02] tracking-tight mt-7 mb-3">沖縄家族旅行<br/><span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#4ab8e0)"}}>しおり</span></h2>
+      <h2 className="font-h text-[52px] font-bold text-on-sf leading-[1.02] tracking-tight mt-7 mb-3">沖縄家族旅行<br/><span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#22d3ee)"}}>しおり</span></h2>
     </div>
     <div className="animate-fade-up" style={{animationDelay:"160ms"}}>
       <p className="text-sm text-on-sf-v/80 font-medium tracking-wide">宮古島と沖縄本島 14日間の冒険</p>
     </div>
     {isTraveling?
-      <div className="mt-8 animate-fade-up" style={{animationDelay:"240ms"}}><div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-h text-2xl font-bold text-pri" style={{background:"linear-gradient(135deg,rgba(26,127,168,.08),rgba(142,213,245,.12))",border:"2px solid rgba(26,127,168,.12)"}}>🎉 旅行 {tripDay}日目！</div></div>
+      <div className="mt-8 animate-fade-up" style={{animationDelay:"240ms"}}><div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-h text-2xl font-bold text-pri" style={{background:"linear-gradient(135deg,rgba(8,145,178,.08),rgba(142,213,245,.12))",border:"2px solid rgba(8,145,178,.12)"}}>🎉 旅行 {tripDay}日目！</div></div>
     :diff>0?
-      <div className="grid grid-cols-4 gap-3 mt-8 w-full max-w-[300px] animate-fade-up" style={{animationDelay:"240ms"}}>{[[dL,"日"],[hL,"時間"],[mL,"分"],[sL,"秒"]].map(([n,u],i)=><div key={i} className="p-3.5 rounded-2xl text-center" style={{background:"rgba(255,255,255,.7)",backdropFilter:"blur(12px)",border:"1px solid rgba(138,130,112,.08)",boxShadow:"0 4px 20px rgba(44,40,24,.04)"}}><span className="num text-[32px] font-extrabold text-gradient block" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#4ab8e0)",lineHeight:1.1}}>{String(n).padStart(2,"0")}</span><span className="text-[8px] font-bold text-on-sf-v/60 tracking-[2px] uppercase mt-1 block">{u}</span></div>)}</div>
+      <div className="grid grid-cols-4 gap-3 mt-8 w-full max-w-[300px] animate-fade-up" style={{animationDelay:"240ms"}}>{[[dL,"日"],[hL,"時間"],[mL,"分"],[sL,"秒"]].map(([n,u],i)=><div key={i} className="p-3.5 rounded-2xl text-center" style={{background:"rgba(255,255,255,.7)",backdropFilter:"blur(12px)",border:"1px solid rgba(138,130,112,.08)",boxShadow:"0 4px 20px rgba(44,40,24,.04)"}}><span className="num text-[32px] font-extrabold text-gradient block" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#22d3ee)",lineHeight:1.1}}>{String(n).padStart(2,"0")}</span><span className="text-[8px] font-bold text-on-sf-v/60 tracking-[2px] uppercase mt-1 block">{u}</span></div>)}</div>
     :null}
     <div className="flex gap-6 mt-8 animate-fade-up" style={{animationDelay:"320ms"}}>{FAMILY.map(m=><div key={m.name} className="flex flex-col items-center gap-1.5">
       <div className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg" style={{background:`linear-gradient(135deg,${m.color}18,${m.color}28)`,border:`2px solid ${m.color}20`}}><MI name={m.icon} style={{color:m.color}} size={24}/></div>
       <span className="text-[11px] font-bold">{m.name}</span><span className="text-[8px] text-on-sf-v/60 font-medium">{m.role}</span>
     </div>)}</div>
     <div className="animate-fade-up" style={{animationDelay:"400ms"}}>
-      <button className="mt-8 px-14 py-4 rounded-2xl font-ui font-bold text-base text-white kinetic relative overflow-hidden group" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 8px 32px rgba(26,127,168,.25),0 2px 8px rgba(26,127,168,.15)"}} onClick={()=>setCover(false)}>
+      <button className="mt-8 px-14 py-4 rounded-2xl font-ui font-bold text-base text-white kinetic relative overflow-hidden group" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 8px 32px rgba(8,145,178,.25),0 2px 8px rgba(8,145,178,.15)"}} onClick={()=>setCover(false)}>
         <span className="relative z-10 flex items-center gap-2">しおりを開く<MI name="arrow_forward" size={18}/></span>
       </button>
     </div>
@@ -556,7 +558,7 @@ function App(){
   return(<div className="max-w-[480px] mx-auto min-h-dvh bg-sf washi grain relative">
     {/* Glass Header */}
     <div className="sticky top-0 z-50 glass bg-sf/75 px-5 py-3 safe-t flex justify-between items-center" style={{borderBottom:"1px solid rgba(138,130,112,.06)"}}>
-      <div className="flex items-center gap-2"><h1 className="font-h font-bold text-xl tracking-tight cursor-pointer text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}} onClick={handleTitleTap}>{tab==="schedule"?"旅のしおり":TABS.find(t=>t.id===tab)?.label}</h1>{FB_DB_URL&&<span className="w-2 h-2 rounded-full bg-sec animate-pulse" title="同期中"/>}</div>
+      <div className="flex items-center gap-2"><h1 className="font-h font-bold text-xl tracking-tight cursor-pointer text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}} onClick={handleTitleTap}>{tab==="schedule"?"旅のしおり":TABS.find(t=>t.id===tab)?.label}</h1>{FB_DB_URL&&<span className="w-2 h-2 rounded-full bg-sec animate-pulse" title="同期中"/>}</div>
       {tab==="schedule"&&<span className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-xl text-[10px] font-bold tracking-wider num" style={{background:"linear-gradient(135deg,rgba(196,58,57,.08),rgba(255,168,160,.12))",color:"#c43a39",border:"1px solid rgba(196,58,57,.1)"}}>Day {sel+1}<span className="opacity-40">/14</span></span>}
     </div>
 
@@ -564,30 +566,30 @@ function App(){
     {tab==="schedule"&&<>
       {/* Day Nav */}
       <nav ref={ref} className="sticky top-[54px] z-40 glass bg-sf/75 px-3 py-3 flex gap-1.5 overflow-x-auto hide-sb day-nav" style={{borderBottom:"1px solid rgba(138,130,112,.04)"}}>
-        {DAYS.map((d,i)=><button key={i} className={`flex-none px-4 py-2.5 rounded-xl num font-bold text-xs kinetic transition-all ${sel===i?"text-white shadow-lg badge-glow":"bg-transparent text-on-sf-v hover:bg-sf-hi"}`} style={sel===i?{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}:{}} onClick={()=>setSel(i)}><span className="text-sm mr-1">{d.emoji}</span>{d.day}</button>)}
+        {DAYS.map((d,i)=><button key={i} className={`flex-none px-4 py-2.5 rounded-xl num font-bold text-xs kinetic transition-all ${sel===i?"text-white shadow-lg badge-glow":"bg-transparent text-on-sf-v hover:bg-sf-hi"}`} style={sel===i?{background:"linear-gradient(135deg,#0891b2,#06b6d4)"}:{}} onClick={()=>setSel(i)}><span className="text-sm mr-1">{d.emoji}</span>{d.day}</button>)}
       </nav>
       <div className="px-4 pt-4 pb-28" key={sel}>
         {/* Day Header Hero */}
         <div className="relative mb-6 animate-fade-up">
           <div className="flex items-center gap-2.5 mb-3">
             <span className="num text-[10px] font-bold tracking-[3px] uppercase text-pri/60">{day.date}</span>
-            <span className="px-3 py-1 rounded-lg text-[9px] font-bold tracking-wider" style={{background:"linear-gradient(135deg,rgba(26,127,168,.06),rgba(142,213,245,.1))",color:"#1a7fa8"}}>{day.region}</span>
+            <span className="px-3 py-1 rounded-lg text-[9px] font-bold tracking-wider" style={{background:"linear-gradient(135deg,rgba(8,145,178,.06),rgba(142,213,245,.1))",color:"#0891b2"}}>{day.region}</span>
           </div>
           <h2 className="font-h text-[36px] font-bold text-on-sf leading-[1.1] tracking-tight">{day.emoji} {day.title.split("").map((c,i)=>c==="！"||c==="→"?<span key={i} className="text-ter">{c}</span>:c)}</h2>
-          {day.stay&&<div className="mt-4 inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs font-bold text-pri" style={{background:"linear-gradient(135deg,rgba(26,127,168,.05),rgba(142,213,245,.08))",border:"1px solid rgba(26,127,168,.08)"}}><MI name="hotel" size={14}/>{day.stay}<span className="opacity-40 mx-1">|</span><span className="opacity-60 font-medium">{day.stayArea}</span></div>}
+          {day.stay&&<div className="mt-4 inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs font-bold text-pri" style={{background:"linear-gradient(135deg,rgba(8,145,178,.05),rgba(142,213,245,.08))",border:"1px solid rgba(8,145,178,.08)"}}><MI name="hotel" size={14}/>{day.stay}<span className="opacity-40 mx-1">|</span><span className="opacity-60 font-medium">{day.stayArea}</span></div>}
         </div>
 
         {/* Timeline */}
         <div className="relative pl-12 mt-4">
-          <div className="absolute left-[20px] top-2 bottom-2 w-[2px] rounded-full" style={{background:"linear-gradient(180deg,rgba(26,127,168,.15),rgba(26,127,168,.05))"}}/>
+          <div className="absolute left-[20px] top-2 bottom-2 w-[2px] rounded-full" style={{background:"linear-gradient(180deg,rgba(8,145,178,.15),rgba(8,145,178,.05))"}}/>
           {day.events.map((ev,i)=>{const tr=TRAVEL[day.day]?.[i];return(<React.Fragment key={i}>
             {tr&&<TravelBadge t={tr}/>}
             <div className="relative mb-5 animate-fade-up" style={{animationDelay:`${i*50}ms`}}>
-            <div className={`absolute left-[-42px] top-4 w-10 h-10 rounded-xl ${iconType(ev)} text-white flex items-center justify-center border-[3px] border-sf z-10 ${i===0?"dot-pulse":""}`} style={{boxShadow:"0 4px 16px rgba(26,127,168,.15)"}}><MI name={ev.icon} size={16}/></div>
+            <div className={`absolute left-[-42px] top-4 w-10 h-10 rounded-xl ${iconType(ev)} text-white flex items-center justify-center border-[3px] border-sf z-10 ${i===0?"dot-pulse":""}`} style={{boxShadow:"0 4px 16px rgba(8,145,178,.15)"}}><MI name={ev.icon} size={16}/></div>
             <div className="card-modern p-5 overflow-hidden kinetic cursor-pointer" onClick={(e)=>handleEventTap(ev,e)}>
               <SpotPhoto ev={ev} photoKey={`day${day.day}_ev${i}`} customPhotos={customPhotos} onUploadClick={(k)=>setPhotoModal(k)}/>
               <div className="flex justify-between items-start mb-1.5">
-                <span className="num font-extrabold text-sm text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{ev.time}</span>
+                <span className="num font-extrabold text-sm text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{ev.time}</span>
                 <div className="flex gap-1.5">
                   {ev.confirmed&&<span className="px-2.5 py-0.5 rounded-lg text-[9px] font-bold num" style={{background:"linear-gradient(135deg,rgba(74,122,0,.08),rgba(184,232,106,.15))",color:"#4a7a00"}}>確定</span>}
                   {ev.warn&&<span className="px-2.5 py-0.5 rounded-lg text-[9px] font-bold pulse-soft" style={{background:"linear-gradient(135deg,rgba(196,58,57,.1),rgba(255,123,115,.15))",color:"#c43a39"}}>注意</span>}
@@ -595,7 +597,7 @@ function App(){
               </div>
               <h3 className="font-ui font-bold text-[15px] mt-0.5 text-on-sf">{ev.text}{ev.url&&<MI name="open_in_new" size={10} style={{marginLeft:4,opacity:.3,verticalAlign:"middle"}}/>}</h3>
               {ev.note&&<p className="text-xs text-on-sf-v/70 mt-2.5 flex items-center gap-1.5 leading-relaxed"><MI name="push_pin" size={11} style={{color:"#c43a39",flexShrink:0}}/>{ev.note}</p>}
-              {ev.maps&&<a href={ev.maps} target="_blank" rel="noopener noreferrer" className="ml-btn inline-flex items-center gap-1.5 mt-3 px-3.5 py-2 rounded-xl text-xs text-pri font-bold transition-colors" style={{background:"linear-gradient(135deg,rgba(26,127,168,.06),rgba(142,213,245,.08))"}} onClick={e=>e.stopPropagation()}><MI name="location_on" size={13}/>地図を見る</a>}
+              {ev.maps&&<a href={ev.maps} target="_blank" rel="noopener noreferrer" className="ml-btn inline-flex items-center gap-1.5 mt-3 px-3.5 py-2 rounded-xl text-xs text-pri font-bold transition-colors" style={{background:"linear-gradient(135deg,rgba(8,145,178,.06),rgba(142,213,245,.08))"}} onClick={e=>e.stopPropagation()}><MI name="location_on" size={13}/>地図を見る</a>}
             </div>
           </div></React.Fragment>);})}
         </div>
@@ -610,8 +612,8 @@ function App(){
                 <span className="flex items-center gap-1 text-[10px] font-bold text-on-sf-v px-2.5 py-1 rounded-lg" style={{background:"rgba(138,130,112,.06)"}}>{bk.meal}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="num font-extrabold text-lg text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{maskAmount(bk.amount)}</span>
-                <a className="w-10 h-10 rounded-xl text-white flex items-center justify-center kinetic" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 4px 12px rgba(26,127,168,.2)"}} href={`https://maps.google.com/?q=${encodeURIComponent(bk.name+" "+bk.area)}`} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}><MI name="map" size={16}/></a>
+                <span className="num font-extrabold text-lg text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{maskAmount(bk.amount)}</span>
+                <a className="w-10 h-10 rounded-xl text-white flex items-center justify-center kinetic" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 4px 12px rgba(8,145,178,.2)"}} href={`https://maps.google.com/?q=${encodeURIComponent(bk.name+" "+bk.area)}`} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}><MI name="map" size={16}/></a>
               </div>
             </div>
           </div>);})()}
@@ -626,9 +628,9 @@ function App(){
           const embedUrl=`https://www.google.com/maps/embed/v1/directions?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&origin=${origin}&destination=${dest}${wps?"&waypoints="+wps:""}&mode=driving&language=ja`;
           return(<div className="mt-6 animate-fade-up">
             {totalKm>0&&<div className="flex items-center gap-3 mb-3 px-1">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="route" size={15} style={{color:"#1a7fa8"}}/><span className="num">{totalKm}km</span></div>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="schedule" size={15} style={{color:"#1a7fa8"}}/><span className="num">{totalMin>=60?`${Math.floor(totalMin/60)}h${totalMin%60>0?totalMin%60+"min":""}`:totalMin+"min"}</span></div>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="pin_drop" size={15} style={{color:"#1a7fa8"}}/><span className="num">{segs.length}区間</span></div>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="route" size={15} style={{color:"#0891b2"}}/><span className="num">{totalKm}km</span></div>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="schedule" size={15} style={{color:"#0891b2"}}/><span className="num">{totalMin>=60?`${Math.floor(totalMin/60)}h${totalMin%60>0?totalMin%60+"min":""}`:totalMin+"min"}</span></div>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-on-sf-v/70"><MI name="pin_drop" size={15} style={{color:"#0891b2"}}/><span className="num">{segs.length}区間</span></div>
             </div>}
             {spots.length>=2&&<div className="rounded-2xl overflow-hidden card-modern" style={{border:"1px solid rgba(138,130,112,.08)"}}>
               <iframe src={embedUrl} className="w-full border-0" style={{height:220}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
@@ -636,9 +638,9 @@ function App(){
           </div>);})()}
 
         {/* Coming Next */}
-        {sel<DAYS.length-1&&<div className="mt-6 p-4 rounded-2xl flex items-center justify-between kinetic cursor-pointer" style={{background:"linear-gradient(135deg,rgba(26,127,168,.04),rgba(142,213,245,.06))",border:"1.5px dashed rgba(26,127,168,.12)"}} onClick={()=>setSel(sel+1)}>
+        {sel<DAYS.length-1&&<div className="mt-6 p-4 rounded-2xl flex items-center justify-between kinetic cursor-pointer" style={{background:"linear-gradient(135deg,rgba(8,145,178,.04),rgba(142,213,245,.06))",border:"1.5px dashed rgba(8,145,178,.12)"}} onClick={()=>setSel(sel+1)}>
           <div><span className="num text-[9px] font-bold text-pri/60 tracking-[2px] uppercase">Coming Next</span><div className="font-h font-bold text-base mt-1 text-on-sf">{DAYS[sel+1].emoji} {DAYS[sel+1].title}</div></div>
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background:"rgba(26,127,168,.08)"}}><MI name="arrow_forward" size={16} style={{color:"#1a7fa8"}}/></div>
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background:"rgba(8,145,178,.08)"}}><MI name="arrow_forward" size={16} style={{color:"#0891b2"}}/></div>
         </div>}
       </div>
     </>}
@@ -649,24 +651,24 @@ function App(){
       <section className="grid grid-cols-3 gap-3 mb-6">
         <div className="col-span-2 card-modern p-5 space-y-2">
           <p className="text-[9px] font-bold tracking-[2px] uppercase text-pri/60">Budget Overview</p>
-          <span className="num font-extrabold text-3xl text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{showMoney?"¥110万":"¥•••••"}</span>
+          <span className="num font-extrabold text-3xl text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{showMoney?"¥110万":"¥•••••"}</span>
           <p className="text-[10px] text-on-sf-v/70">{showMoney?"宿泊 ¥821,141 ＋ 食事・交通":"ヘッダーを3回タップで表示"}</p>
-          <div className="h-2 w-full bg-sf-hi rounded-full overflow-hidden flex"><div className="h-full rounded-full" style={{width:"65%",background:"linear-gradient(90deg,#1a7fa8,#2b9ac4)"}}/><div className="h-full" style={{width:"25%",background:"#4a7a00"}}/><div className="h-full" style={{width:"10%",background:"#c43a39"}}/></div>
+          <div className="h-2 w-full bg-sf-hi rounded-full overflow-hidden flex"><div className="h-full rounded-full" style={{width:"65%",background:"linear-gradient(90deg,#0891b2,#06b6d4)"}}/><div className="h-full" style={{width:"25%",background:"#4a7a00"}}/><div className="h-full" style={{width:"10%",background:"#c43a39"}}/></div>
         </div>
-        <div className="rounded-2xl p-5 flex flex-col items-center justify-center text-center text-white" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 8px 24px rgba(26,127,168,.15)"}}>
+        <div className="rounded-2xl p-5 flex flex-col items-center justify-center text-center text-white" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 8px 24px rgba(8,145,178,.15)"}}>
           <MI name="restaurant_menu" size={22} style={{marginBottom:4,opacity:.8}}/>
           <span className="font-h text-[10px] font-bold opacity-70">食事進捗</span>
           <span className="num text-2xl font-extrabold">83%</span>
           <span className="text-[9px] opacity-60">35/42食</span>
         </div>
       </section>
-      <h3 className="font-h text-xl font-bold mb-5"><span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>14日間</span>の食事プラン</h3>
+      <h3 className="font-h text-xl font-bold mb-5"><span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>14日間</span>の食事プラン</h3>
       <div className="relative pl-9">
-        <div className="absolute left-3.5 top-3 bottom-3 w-[2px] rounded-full" style={{background:"linear-gradient(180deg,rgba(26,127,168,.12),rgba(26,127,168,.04))"}}/>
+        <div className="absolute left-3.5 top-3 bottom-3 w-[2px] rounded-full" style={{background:"linear-gradient(180deg,rgba(8,145,178,.12),rgba(8,145,178,.04))"}}/>
         {MEALS.map((m,i)=><div key={i} className="relative mb-5 animate-fade-up" style={{animationDelay:`${i*30}ms`}}>
-          <div className="absolute left-[-30px] top-0 w-7 h-7 rounded-lg flex items-center justify-center font-h text-[10px] font-bold z-10 text-white" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{m.d}</div>
+          <div className="absolute left-[-30px] top-0 w-7 h-7 rounded-lg flex items-center justify-center font-h text-[10px] font-bold z-10 text-white" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{m.d}</div>
           <div className="font-h font-bold text-xs text-on-sf/60 mb-2">{m.date}</div>
-          {[["b","朝","linear-gradient(135deg,#f4b183,#e8a070)",m.b,m.bimg,m.burl],["l","昼","linear-gradient(135deg,#1a7fa8,#2b9ac4)",m.l,m.limg,m.lurl],["d","夕","linear-gradient(135deg,#c43a39,#e05554)",m.di,m.diimg,m.diurl]].map(([k,label,bg,text,img,url])=>{
+          {[["b","朝","linear-gradient(135deg,#f4b183,#e8a070)",m.b,m.bimg,m.burl],["l","昼","linear-gradient(135deg,#0891b2,#06b6d4)",m.l,m.limg,m.lurl],["d","夕","linear-gradient(135deg,#c43a39,#e05554)",m.di,m.diimg,m.diurl]].map(([k,label,bg,text,img,url])=>{
             const detail=findMealDetail(text);
             return<div key={k} className={`card-modern p-2.5 mb-1.5 flex items-center gap-2.5 ${detail?"cursor-pointer kinetic":""}`} onClick={()=>{if(detail)setMealDetail(detail);else if(url)window.open(url,'_blank');}}>
               {img&&<MealPhoto src={img}/>}
@@ -681,7 +683,7 @@ function App(){
           )}
         </div>)}
       </div>
-      <h3 className="font-h text-lg font-extrabold mt-8 mb-4 flex items-center gap-2"><MI name="hotel" size={18} style={{color:"#1a7fa8"}}/>宿泊予約リスト</h3>
+      <h3 className="font-h text-lg font-extrabold mt-8 mb-4 flex items-center gap-2"><MI name="hotel" size={18} style={{color:"#0891b2"}}/>宿泊予約リスト</h3>
       {BOOKINGS.map((b,i)=><div key={i} className="rounded-2xl overflow-hidden card-modern mb-4 kinetic cursor-pointer" onClick={()=>b.url&&window.open(b.url,'_blank')}>
         <HotelImg b={b}/>
         <div className="p-4">
@@ -690,10 +692,10 @@ function App(){
           </div>
           <p className="text-xs text-on-sf-v/60 mb-3 leading-relaxed">{b.desc}</p>
           <div className="flex justify-between items-center">
-            <div><div className="num font-extrabold text-lg text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{maskAmount(b.amount)}</div><div className="text-[9px] text-ol/60 font-mono mt-0.5">予約: {b.ref}</div></div>
+            <div><div className="num font-extrabold text-lg text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{maskAmount(b.amount)}</div><div className="text-[9px] text-ol/60 font-mono mt-0.5">予約: {b.ref}</div></div>
             <div className="flex gap-2">
               <button className="w-9 h-9 rounded-xl text-on-sf-v/50 flex items-center justify-center kinetic" style={{background:"rgba(138,130,112,.06)"}} onClick={e=>{e.stopPropagation();navigator.clipboard?.writeText(b.ref);}}><MI name="content_copy" size={14}/></button>
-              <a className="w-9 h-9 rounded-xl text-white flex items-center justify-center kinetic" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 3px 10px rgba(26,127,168,.15)"}} href={`https://maps.google.com/?q=${encodeURIComponent(b.name+" "+b.area)}`} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}><MI name="map" size={14}/></a>
+              <a className="w-9 h-9 rounded-xl text-white flex items-center justify-center kinetic" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 3px 10px rgba(8,145,178,.15)"}} href={`https://maps.google.com/?q=${encodeURIComponent(b.name+" "+b.area)}`} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}><MI name="map" size={14}/></a>
             </div>
           </div>
         </div>
@@ -702,17 +704,17 @@ function App(){
 
     {/* ===== PACKING TAB ===== */}
     {tab==="packing"&&<div className="px-4 pt-4 pb-28">
-      <div className="rounded-2xl p-5 text-center mb-5" style={{background:"linear-gradient(135deg,rgba(142,213,245,.15),rgba(26,127,168,.08))",border:"1px solid rgba(26,127,168,.06)"}}>
-        <div className="num text-4xl font-extrabold text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>{done}/{total}</div>
+      <div className="rounded-2xl p-5 text-center mb-5" style={{background:"linear-gradient(135deg,rgba(142,213,245,.15),rgba(8,145,178,.08))",border:"1px solid rgba(8,145,178,.06)"}}>
+        <div className="num text-4xl font-extrabold text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>{done}/{total}</div>
         <p className="text-xs text-on-sf-v/70 mt-1">{done===total?"🎉 全部準備OK！":"あと "+(total-done)+" 個！がんばろう"}</p>
         <div className="h-2 rounded-full overflow-hidden mt-3" style={{background:"rgba(138,130,112,.08)"}}><div className="h-full rounded-full transition-all duration-700 ease-out" style={{width:`${(done/total)*100}%`,background:"linear-gradient(90deg,#4a7a00,#6ba800)"}}/></div>
       </div>
-      <div className="grid grid-cols-2 gap-2.5 mb-5">{PACKING.map((c,ci)=>{const items=getFilteredItems(ci);const cd=items.filter(x=>chk[`${ci}-${x.idx}`]).length;return<div key={ci} className={`card-modern p-4 kinetic cursor-pointer transition-all ${pCat===ci?"ring-2 ring-pri/20":"ring-1 ring-transparent"}`} style={pCat===ci?{background:"linear-gradient(135deg,rgba(26,127,168,.03),rgba(142,213,245,.05))"}:{}} onClick={()=>setPCat(ci)}>
-        <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-2" style={{background:"rgba(26,127,168,.06)"}}><MI name={c.icon} size={16} style={{color:"#1a7fa8"}}/></div>
+      <div className="grid grid-cols-2 gap-2.5 mb-5">{PACKING.map((c,ci)=>{const items=getFilteredItems(ci);const cd=items.filter(x=>chk[`${ci}-${x.idx}`]).length;return<div key={ci} className={`card-modern p-4 kinetic cursor-pointer transition-all ${pCat===ci?"ring-2 ring-pri/20":"ring-1 ring-transparent"}`} style={pCat===ci?{background:"linear-gradient(135deg,rgba(8,145,178,.03),rgba(142,213,245,.05))"}:{}} onClick={()=>setPCat(ci)}>
+        <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-2" style={{background:"rgba(8,145,178,.06)"}}><MI name={c.icon} size={16} style={{color:"#0891b2"}}/></div>
         <div className="text-xs font-bold">{c.cat}</div><div className="text-[10px] text-on-sf-v/50 num font-semibold">{cd}/{items.length}</div>
         <div className="flex gap-1 mt-2">{items.slice(0,8).map((x,j)=><span key={j} className="w-1.5 h-1.5 rounded-full transition-colors" style={{background:chk[`${ci}-${x.idx}`]?"#4a7a00":"rgba(138,130,112,.12)"}}/>)}</div>
       </div>})}</div>
-      <h3 className="text-sm font-bold mb-3 flex items-center gap-2"><div className="w-6 h-6 rounded-md flex items-center justify-center" style={{background:"rgba(26,127,168,.06)"}}><MI name={PACKING[pCat].icon} size={14} style={{color:"#1a7fa8"}}/></div>{PACKING[pCat].cat}</h3>
+      <h3 className="text-sm font-bold mb-3 flex items-center gap-2"><div className="w-6 h-6 rounded-md flex items-center justify-center" style={{background:"rgba(8,145,178,.06)"}}><MI name={PACKING[pCat].icon} size={14} style={{color:"#0891b2"}}/></div>{PACKING[pCat].cat}</h3>
       {getFilteredItems(pCat).map(({item,idx})=>{const k=`${pCat}-${idx}`,d=!!chk[k];return<div key={idx} className="flex items-center gap-3 p-3.5 card-modern mb-1.5 transition-all" style={d?{opacity:.6}:{}}>
         <div className={`w-5 h-5 rounded-md flex-shrink-0 flex items-center justify-center border-2 transition-all cursor-pointer ${d?"text-white":"border-ol-v/30"}`} style={d?{background:"linear-gradient(135deg,#4a7a00,#6ba800)",borderColor:"transparent"}:{}} onClick={()=>tog(k)}>{d&&<MI name="check" size={12}/>}</div>
         <span className={`text-xs font-medium flex-1 cursor-pointer ${d?"line-through text-on-sf-v/50":""}`} onClick={()=>tog(k)}>{item}</span>
@@ -720,7 +722,7 @@ function App(){
       </div>})}
       <div className="flex gap-2 mt-3">
         <input className="flex-1 px-4 py-2.5 rounded-xl border-[1.5px] border-ol-v/10 text-xs bg-white outline-none focus:border-pri/50 font-b transition-colors" placeholder="アイテムを追加..." value={newItemText} onChange={e=>setNewItemText(e.target.value)} onKeyDown={e=>{if(e.key==="Enter")addCustomItem(pCat);}}/>
-        <button className="px-5 py-2.5 rounded-xl text-white text-xs font-bold kinetic" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}} onClick={()=>addCustomItem(pCat)}>＋追加</button>
+        <button className="px-5 py-2.5 rounded-xl text-white text-xs font-bold kinetic" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)"}} onClick={()=>addCustomItem(pCat)}>＋追加</button>
       </div>
     </div>}
 
@@ -729,7 +731,7 @@ function App(){
       <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
         {memos.length===0&&<div className="text-center text-on-sf-v/40 text-sm mt-10 leading-relaxed">💬 旅行中のメモや連絡を<br/>ここに残せます</div>}
         {memos.map((m,i)=>{const isY=m.sender==="ゆうき";const t=new Date(m.time);const ts=`${t.getMonth()+1}/${t.getDate()} ${String(t.getHours()).padStart(2,"0")}:${String(t.getMinutes()).padStart(2,"0")}`;
-          return<div key={i} className={`max-w-[78%] px-4 py-3 text-sm leading-relaxed ${isY?"self-end rounded-2xl rounded-br-sm text-white":"self-start rounded-2xl rounded-bl-sm text-on-sf"}`} style={isY?{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 4px 16px rgba(26,127,168,.12)"}:{background:"rgba(142,213,245,.15)",border:"1px solid rgba(142,213,245,.1)"}}>
+          return<div key={i} className={`max-w-[78%] px-4 py-3 text-sm leading-relaxed ${isY?"self-end rounded-2xl rounded-br-sm text-white":"self-start rounded-2xl rounded-bl-sm text-on-sf"}`} style={isY?{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 4px 16px rgba(8,145,178,.12)"}:{background:"rgba(142,213,245,.15)",border:"1px solid rgba(142,213,245,.1)"}}>
             <div className="text-[10px] font-bold opacity-50 mb-0.5">{m.sender}</div>
             <div>{m.text}</div>
             <div className="text-[9px] opacity-35 text-right mt-1 num">{ts}</div>
@@ -739,11 +741,11 @@ function App(){
       </div>
       <div className="flex gap-2 px-4 py-3 glass bg-sf/75 safe-b" style={{borderTop:"1px solid rgba(138,130,112,.06)"}}>
         <div className="flex rounded-xl overflow-hidden flex-shrink-0" style={{border:"1.5px solid rgba(138,130,112,.08)"}}>
-          <button className={`px-3 py-2 text-[10px] font-bold transition-all ${memoSender==="ゆうき"?"text-white":"bg-white text-on-sf-v/50"}`} style={memoSender==="ゆうき"?{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}:{}} onClick={()=>setMemoSender("ゆうき")}>ゆうき</button>
+          <button className={`px-3 py-2 text-[10px] font-bold transition-all ${memoSender==="ゆうき"?"text-white":"bg-white text-on-sf-v/50"}`} style={memoSender==="ゆうき"?{background:"linear-gradient(135deg,#0891b2,#06b6d4)"}:{}} onClick={()=>setMemoSender("ゆうき")}>ゆうき</button>
           <button className={`px-3 py-2 text-[10px] font-bold transition-all ${memoSender==="ママ"?"text-white":"bg-white text-on-sf-v/50"}`} style={memoSender==="ママ"?{background:"linear-gradient(135deg,#c43a39,#e05554)"}:{}} onClick={()=>setMemoSender("ママ")}>ママ</button>
         </div>
         <input className="flex-1 px-4 py-2 rounded-xl text-xs outline-none focus:border-pri/40 font-b transition-colors" style={{background:"rgba(138,130,112,.04)",border:"1.5px solid rgba(138,130,112,.08)"}} placeholder="メッセージ..." value={memoText} onChange={e=>setMemoText(e.target.value)} onKeyDown={e=>{if(e.key==="Enter")sendMemo();}}/>
-        <button className="w-10 h-10 rounded-xl text-white flex items-center justify-center flex-shrink-0 kinetic" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 3px 10px rgba(26,127,168,.15)"}} onClick={sendMemo}><MI name="send" size={16}/></button>
+        <button className="w-10 h-10 rounded-xl text-white flex items-center justify-center flex-shrink-0 kinetic" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 3px 10px rgba(8,145,178,.15)"}} onClick={sendMemo}><MI name="send" size={16}/></button>
       </div>
     </div>}
 
@@ -755,13 +757,13 @@ function App(){
       </div>
       {[["医療相談","medical"],["ロードサービス","road"]].map(([title,key])=><div key={title}>
         <h4 className="text-[10px] font-bold text-on-sf-v/50 mt-5 mb-2.5 tracking-[2px] uppercase">{title}</h4>
-        {EMERGENCY.filter(e=>e[key]).map((e,i)=><div key={i} className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(26,127,168,.06)"}}><MI name={e.icon} size={14} style={{color:"#1a7fa8"}}/></div>{e.label}</span><a className="num font-extrabold text-base text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}} href={`tel:${e.number}`}>{e.number}</a></div>)}
+        {EMERGENCY.filter(e=>e[key]).map((e,i)=><div key={i} className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(8,145,178,.06)"}}><MI name={e.icon} size={14} style={{color:"#0891b2"}}/></div>{e.label}</span><a className="num font-extrabold text-base text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}} href={`tel:${e.number}`}>{e.number}</a></div>)}
       </div>)}
       <h4 className="text-[10px] font-bold text-on-sf-v/50 mt-5 mb-2.5 tracking-[2px] uppercase">宿泊施設</h4>
-      {EMERGENCY.filter(e=>!e.critical&&!e.medical&&!e.road).map((e,i)=><div key={i} className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(26,127,168,.06)"}}><MI name={e.icon} size={14} style={{color:"#1a7fa8"}}/></div>{e.label}</span><a className="num font-extrabold text-base text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}} href={`tel:${e.number}`}>{e.number}</a></div>)}
+      {EMERGENCY.filter(e=>!e.critical&&!e.medical&&!e.road).map((e,i)=><div key={i} className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(8,145,178,.06)"}}><MI name={e.icon} size={14} style={{color:"#0891b2"}}/></div>{e.label}</span><a className="num font-extrabold text-base text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}} href={`tel:${e.number}`}>{e.number}</a></div>)}
       <h4 className="text-[10px] font-bold text-on-sf-v/50 mt-5 mb-2.5 tracking-[2px] uppercase">フェリー予約番号</h4>
-      <div className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(26,127,168,.06)"}}><MI name="directions_boat" size={14} style={{color:"#1a7fa8"}}/></div>高松→土庄 4/25</span><span className="font-mono text-xs font-bold text-on-sf-v/70">0304250903</span></div>
-      <div className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(26,127,168,.06)"}}><MI name="directions_boat" size={14} style={{color:"#1a7fa8"}}/></div>土庄→高松 4/27</span><span className="font-mono text-xs font-bold text-on-sf-v/70">0404270802</span></div>
+      <div className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(8,145,178,.06)"}}><MI name="directions_boat" size={14} style={{color:"#0891b2"}}/></div>高松→土庄 4/25</span><span className="font-mono text-xs font-bold text-on-sf-v/70">0304250903</span></div>
+      <div className="card-modern p-3.5 mb-2 flex justify-between items-center"><span className="text-xs font-bold flex items-center gap-2.5"><div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:"rgba(8,145,178,.06)"}}><MI name="directions_boat" size={14} style={{color:"#0891b2"}}/></div>土庄→高松 4/27</span><span className="font-mono text-xs font-bold text-on-sf-v/70">0404270802</span></div>
       <div className="rounded-2xl p-4 mt-5 text-center text-xs text-on-sf-v/60 leading-relaxed" style={{background:"rgba(138,130,112,.04)",border:"1.5px dashed rgba(138,130,112,.1)"}}>⚠️ 車検証はフェリー乗船時に必須です<br/>🚗 GLC300（なにわ る・416）</div>
     </div>}
 
@@ -772,11 +774,11 @@ function App(){
         <h3 className="font-h font-bold text-xl mb-1.5">{mealDetail.name}</h3>
         {mealDetail.note&&<p className="text-xs text-on-sf-v/70 mb-5 rounded-xl px-4 py-2.5 leading-relaxed" style={{background:"rgba(138,130,112,.04)"}}>{mealDetail.note}</p>}
         <div className="space-y-3">
-          {[["location_on","住所",mealDetail.addr,"#1a7fa8"],["call","電話",mealDetail.tel,"#1a7fa8"],["schedule","営業時間",mealDetail.hours,"#4a7a00"],["payments","予算",mealDetail.budget,"#c43a39"]].map(([icon,label,val,color])=>
+          {[["location_on","住所",mealDetail.addr,"#0891b2"],["call","電話",mealDetail.tel,"#0891b2"],["schedule","営業時間",mealDetail.hours,"#4a7a00"],["payments","予算",mealDetail.budget,"#c43a39"]].map(([icon,label,val,color])=>
           <div key={label} className="flex items-start gap-3"><div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{background:`${color}10`}}><MI name={icon} size={16} style={{color}}/></div><div><p className="text-[9px] font-bold text-on-sf-v/50 uppercase tracking-[1.5px]">{label}</p>{label==="電話"&&val!=="—"?<a href={`tel:${val}`} className="text-xs font-bold text-pri">{val}</a>:<p className="text-xs font-medium">{label==="予算"&&!showMoney?"•••••":val}</p>}</div></div>)}
         </div>
         <div className="flex gap-2 mt-6">
-          <a href={mealDetail.maps} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-white rounded-xl font-bold text-xs kinetic" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 4px 16px rgba(26,127,168,.15)"}}><MI name="map" size={16}/>地図を開く</a>
+          <a href={mealDetail.maps} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-white rounded-xl font-bold text-xs kinetic" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 4px 16px rgba(8,145,178,.15)"}}><MI name="map" size={16}/>地図を開く</a>
           {mealDetail.url&&<a href={mealDetail.url} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-on-sf rounded-xl font-bold text-xs kinetic" style={{background:"rgba(138,130,112,.05)"}}><MI name="open_in_new" size={16}/>公式サイト</a>}
         </div>
         <button className="w-full mt-3 py-2.5 text-on-sf-v/50 text-xs font-medium" onClick={()=>setMealDetail(null)}>閉じる</button>
@@ -786,9 +788,9 @@ function App(){
     {/* Photo Upload Modal */}
     {photoModal&&<div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/30 backdrop-blur-md" onClick={()=>setPhotoModal(null)}>
       <div className="bg-white rounded-3xl p-6 mx-4 max-w-xs w-full animate-scale-in" style={{boxShadow:"0 20px 60px rgba(44,40,24,.15)"}} onClick={e=>e.stopPropagation()}>
-        <h3 className="font-h font-bold text-lg mb-1">写真を<span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}}>変更</span></h3>
+        <h3 className="font-h font-bold text-lg mb-1">写真を<span className="serif-i text-gradient" style={{backgroundImage:"linear-gradient(135deg,#0891b2,#06b6d4)"}}>変更</span></h3>
         <p className="text-xs text-on-sf-v/60 mb-5">旅行中に撮った写真で差し替えできます</p>
-        <label className="flex items-center justify-center gap-2 w-full py-3.5 text-white rounded-xl font-bold text-sm kinetic cursor-pointer" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 4px 16px rgba(26,127,168,.15)"}}>
+        <label className="flex items-center justify-center gap-2 w-full py-3.5 text-white rounded-xl font-bold text-sm kinetic cursor-pointer" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 4px 16px rgba(8,145,178,.15)"}}>
           <MI name="photo_camera" size={18}/>写真を選択
           <input type="file" accept="image/*" className="hidden" onChange={(e)=>handlePhotoUpload(photoModal,e)}/>
         </label>
@@ -800,17 +802,17 @@ function App(){
     {/* FAB - hidden on memo tab */}
     {tab!=="memo"&&<><div className={`fixed inset-0 bg-on-sf/15 z-[43] glass transition-opacity duration-200 ${fabOpen?"opacity-100":"opacity-0 pointer-events-none"}`} onClick={()=>setFabOpen(false)}/>
     <div className={`fixed bottom-[132px] right-[max(calc((100%-480px)/2+12px),12px)] z-[44] flex flex-col gap-2.5 items-end transition-all duration-300 ${fabOpen?"opacity-100 translate-y-0":"opacity-0 translate-y-4 pointer-events-none"}`} style={{paddingBottom:"env(safe-area-inset-bottom,20px)"}}>
-      {[{icon:"luggage",label:"持ち物チェック",color:"#1a7fa8",action:()=>{setFabOpen(false);setTab("packing");}},{icon:"emergency",label:"緊急連絡先",color:"#c43a39",action:()=>{setFabOpen(false);setTab("emergency");}},{icon:"backup",label:"写真バックアップ",color:"#8a8270",action:()=>{setFabOpen(false);setExportKeys(true);}},{icon:"auto_stories",label:"表紙に戻る",color:"#1a7fa8",action:()=>{setFabOpen(false);setCover(true);}}].map((f,i)=><button key={i} className="flex items-center gap-2.5 card-modern px-4 py-3 font-b text-xs font-bold kinetic animate-fade-up" style={{animationDelay:`${i*50}ms`}} onClick={f.action}><MI name={f.icon} size={16} style={{color:f.color}}/>{f.label}</button>)}
+      {[{icon:"luggage",label:"持ち物チェック",color:"#0891b2",action:()=>{setFabOpen(false);setTab("packing");}},{icon:"emergency",label:"緊急連絡先",color:"#c43a39",action:()=>{setFabOpen(false);setTab("emergency");}},{icon:"backup",label:"写真バックアップ",color:"#8a8270",action:()=>{setFabOpen(false);setExportKeys(true);}},{icon:"auto_stories",label:"表紙に戻る",color:"#0891b2",action:()=>{setFabOpen(false);setCover(true);}}].map((f,i)=><button key={i} className="flex items-center gap-2.5 card-modern px-4 py-3 font-b text-xs font-bold kinetic animate-fade-up" style={{animationDelay:`${i*50}ms`}} onClick={f.action}><MI name={f.icon} size={16} style={{color:f.color}}/>{f.label}</button>)}
     </div>
     <button className={`fixed bottom-[calc(70px+env(safe-area-inset-bottom,20px))] right-[max(calc((100%-480px)/2+16px),16px)] z-[45] w-14 h-14 rounded-2xl text-white flex items-center justify-center kinetic transition-all duration-300 ${fabOpen?"rotate-45":""}`} style={{background:fabOpen?"#2c2818":"linear-gradient(135deg,#c43a39,#e05554)",boxShadow:fabOpen?"0 4px 20px rgba(44,40,24,.2)":"0 8px 28px rgba(196,58,57,.25)"}} onClick={()=>setFabOpen(f=>!f)}><MI name="add" size={26}/></button></>}
 
     {/* PIN Modal */}
     {pinModal&&<div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/40 backdrop-blur-md" onClick={()=>setPinModal(false)}>
       <div className="bg-white rounded-3xl p-8 mx-6 max-w-[320px] w-full animate-scale-in text-center" style={{boxShadow:"0 20px 60px rgba(44,40,24,.15)"}} onClick={e=>e.stopPropagation()}>
-        <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{background:"linear-gradient(135deg,rgba(26,127,168,.08),rgba(142,213,245,.12)"}}><MI name="lock" size={24} style={{color:"#1a7fa8"}}/></div>
+        <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{background:"linear-gradient(135deg,rgba(8,145,178,.08),rgba(142,213,245,.12)"}}><MI name="lock" size={24} style={{color:"#0891b2"}}/></div>
         <h3 className="font-h font-bold text-lg mb-2">予算を表示</h3>
         <p className="text-xs text-on-sf-v/60 mb-6">PINコードを入力してください</p>
-        <div className="flex justify-center gap-3 mb-5">{[0,1,2,3].map(i=><div key={i} className="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold transition-all" style={{background:pinError?"rgba(196,58,57,.08)":pinInput[i]?"rgba(26,127,168,.08)":"rgba(138,130,112,.04)",border:pinError?"2px solid rgba(196,58,57,.2)":pinInput[i]?"2px solid rgba(26,127,168,.2)":"2px solid rgba(138,130,112,.08)",color:pinError?"#c43a39":"#2c2818"}}>{pinInput[i]?"●":""}</div>)}</div>
+        <div className="flex justify-center gap-3 mb-5">{[0,1,2,3].map(i=><div key={i} className="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold transition-all" style={{background:pinError?"rgba(196,58,57,.08)":pinInput[i]?"rgba(8,145,178,.08)":"rgba(138,130,112,.04)",border:pinError?"2px solid rgba(196,58,57,.2)":pinInput[i]?"2px solid rgba(8,145,178,.2)":"2px solid rgba(138,130,112,.08)",color:pinError?"#c43a39":"#2c2818"}}>{pinInput[i]?"●":""}</div>)}</div>
         {pinError&&<p className="text-xs text-err font-bold mb-4">PINが違います</p>}
         <div className="grid grid-cols-3 gap-2">{[1,2,3,4,5,6,7,8,9,null,0,"del"].map((n,i)=><button key={i} className={`h-12 rounded-xl font-bold text-base kinetic ${n===null?"invisible":""}`} style={{background:n==="del"?"rgba(196,58,57,.06)":"rgba(138,130,112,.04)"}} onClick={()=>{if(n==="del")setPinInput(p=>p.slice(0,-1));else if(n!==null&&pinInput.length<4){const next=pinInput+n;setPinInput(next);if(next.length===4){if(next===MONEY_PIN){setShowMoney(true);localStorage.setItem(MONEY_KEY,"1");setPinModal(false);setPinInput("");}else{setPinError(true);setTimeout(()=>{setPinError(false);setPinInput("");},1000);}}}}}>{n==="del"?<MI name="backspace" size={18} style={{color:"#c43a39"}}/>:n!==null?n:""}</button>)}</div>
         <button className="mt-5 text-xs text-on-sf-v/40 font-bold" onClick={()=>setPinModal(false)}>キャンセル</button>
@@ -818,8 +820,8 @@ function App(){
     </div>}
 
     {/* Bottom Nav */}
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-50 flex justify-around items-center px-2 py-2 glass bg-sf/75 safe-b" style={{borderTop:"1px solid rgba(138,130,112,.06)",boxShadow:"0 -4px 24px rgba(44,40,24,.03)"}}>
-      {TABS.map(t=><button key={t.id} className={`flex flex-col items-center gap-0.5 px-4 py-2 rounded-2xl transition-all duration-200 kinetic ${tab===t.id?"text-white":"text-on-sf-v/40 hover:text-on-sf-v/70"}`} style={tab===t.id?{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)",boxShadow:"0 4px 16px rgba(26,127,168,.2)"}:{}} onClick={()=>{setTab(t.id);setFabOpen(false);}}>
+    <nav className="fixed left-1/2 -translate-x-1/2 w-[calc(100%-24px)] max-w-[456px] z-50 flex justify-around items-center px-2 py-2 glass bg-white/70 rounded-[2rem]" style={{bottom:"calc(10px + env(safe-area-inset-bottom,0px))",border:"1px solid rgba(8,145,178,.12)",boxShadow:"0 10px 34px rgba(8,60,80,.14)"}}>
+      {TABS.map(t=><button key={t.id} className={`flex flex-col items-center gap-0.5 px-4 py-2 rounded-2xl transition-all duration-200 kinetic ${tab===t.id?"text-white":"text-on-sf-v/40 hover:text-on-sf-v/70"}`} style={tab===t.id?{background:"linear-gradient(135deg,#0891b2,#06b6d4)",boxShadow:"0 4px 16px rgba(8,145,178,.2)"}:{}} onClick={()=>{setTab(t.id);setFabOpen(false);}}>
         <MI name={t.icon} fill={tab===t.id} size={20}/>
         <span className="text-[9px] font-bold font-b">{t.label}</span>
       </button>)}
@@ -831,7 +833,7 @@ function App(){
         <h3 className="font-h font-bold text-base mb-4">写真バックアップ（{Object.keys(customPhotos).length}枚）</h3>
         <p className="text-[10px] text-on-sf-v/60 mb-4">コード改修前にバックアップを保存しておけば、改修後にワンタップで復元できます</p>
         <div className="flex flex-col gap-2.5">
-          <button className="w-full py-3 rounded-xl text-white font-bold text-xs flex items-center justify-center gap-2" style={{background:"linear-gradient(135deg,#1a7fa8,#2b9ac4)"}} onClick={()=>{const json=JSON.stringify(customPhotos,null,2);const blob=new Blob([json],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="okinawa-photos-backup.json";a.click();URL.revokeObjectURL(url);}}><MI name="download" size={16}/>バックアップを保存</button>
+          <button className="w-full py-3 rounded-xl text-white font-bold text-xs flex items-center justify-center gap-2" style={{background:"linear-gradient(135deg,#0891b2,#06b6d4)"}} onClick={()=>{const json=JSON.stringify(customPhotos,null,2);const blob=new Blob([json],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="okinawa-photos-backup.json";a.click();URL.revokeObjectURL(url);}}><MI name="download" size={16}/>バックアップを保存</button>
           <button className="w-full py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2" style={{background:"rgba(138,130,112,.06)"}} onClick={()=>{const input=document.createElement("input");input.type="file";input.accept=".json";input.onchange=(e)=>{const file=e.target.files?.[0];if(!file)return;const reader=new FileReader();reader.onload=(ev)=>{try{const data=JSON.parse(ev.target.result);const keys=Object.keys(data);if(keys.length===0){alert("写真データが見つかりません");return;}if(confirm(keys.length+"枚の写真を復元しますか？")){setCustomPhotos(p=>({...p,...data}));fbPhotos.putAll({...customPhotos,...data});alert("復元しました！");}}catch{alert("ファイルが正しくありません");}};reader.readAsText(file);};input.click();}}><MI name="upload" size={16}/>バックアップから復元</button>
         </div>
         <button className="mt-4 text-xs text-on-sf-v/40 font-bold" onClick={()=>setExportKeys(false)}>閉じる</button>
