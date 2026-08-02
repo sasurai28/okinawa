@@ -1,4 +1,4 @@
-const CACHE_NAME = 'okinawa-shiori-v3';
+const CACHE_NAME = 'okinawa-shiori-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
